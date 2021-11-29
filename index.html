@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">La Veg Vita</h1>
+      <h2>Avalie nosso restaurante</h2>
+
+      <div class="form-section">
+        <input type="text" id="name" placeholder="Seu Nome" />
+        <input type="email" id="email" placeholder="Seu Email" />
+        <input type="number" id="rating" placeholder="Avaliação - de 0 a 10" />
+        <textarea
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comentario"
+        ></textarea>
+        <button onclick="enviar()"class="botao">ENVIAR</button>
+      </div>
+
+      <div class="user-rating">
+        <h2>Sua Avaliação</h2>
+        <span class="info" id="user-rating-name"></span>
+        <span class="info" id="user-rating-email"></span>
+        <span class="info" id="user-rating-value"></span>
+        <label>Comentario</label>
+        <p class="info" id="user-rating-comment"></p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
